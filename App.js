@@ -5,7 +5,6 @@ import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native";
 import Categories from "./Components/Categories.js";
 import Card from "./Components/Cards.js";
-import CardView from "react-native-cardview";
 
 const items = [
   { text: "Fruits" },
@@ -58,7 +57,6 @@ export default class App extends React.Component {
             ))}
           </ScrollView>
           <Subtitle>Items</Subtitle>
-
           <ItemsLayout>
             <ColumnOne>
               <Card />
@@ -117,7 +115,7 @@ const Subtitle = styled.Text`
 
 const ItemsLayout = styled.View`
   flex-direction: row;
-  flex: 1;
+  flex: 3;
 `;
 
 const ColumnOne = styled.View``;
